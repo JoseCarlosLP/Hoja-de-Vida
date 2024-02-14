@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(37, 40, 80);
+    padding: 30px;
+    justify-content: center;
+}
+.encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 35px;
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    font-style: oblique;
+}
+.nombre{
+    background-color: green;
+}
+.perfil{
+    width: auto ;
+    height: 250px;
+    border-radius: 75px;
+}
+.habilidades{
+    background-color: white;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 20px;
+}
+h2{
+    text-align: center;
+}
+.separador{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.caja{
+    align-content: normal;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.habilidad{
+    display: flex;
+    align-items: center;
+}
+.img_lista{
+    margin-right: 15px;
+    height:35px
+}
+@media (max-width: 760px) {
+    .separador{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    body{
+        font-size: 15px;
+    }
+    .encabezado{
+        padding: 25px;
+    }
+    .perfil {
+        height: 100px;
+    }
+}
+
+@media (max-width: 300px) {
+    .encabezado{
+        padding-bottom: 50px;
+    }
+    .perfil{
+        height: 75px   ;
+    }
+}
